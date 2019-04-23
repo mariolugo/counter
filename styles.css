@@ -15,7 +15,6 @@ body {
   max-width: 600px;
 }
 .container > div {
-  font-size: 5vw;
   padding: 23px;
   color: white;
   margin: 10px;
@@ -30,14 +29,30 @@ p {
   margin: 0;
 }
 p.value {
-  margin: 0;
   font-size: 40px;
   color: #000;
   font-weight: lighter;
 }
 p.label {
-  margin: 0;
   font-size: 15px;
   font-weight: bolder;
   color: #c8c8c8;
+}
+
+@media only screen and (max-width: 468px) {
+  .container {
+    width: 100%;
+  }
+
+  p.value {
+    font-size: 20px;
+  }
+  p.label {
+    font-size: 12px;
+  }
+
+  .container > div {
+    padding: 10px;
+    height: 60px;
+  }
 }
